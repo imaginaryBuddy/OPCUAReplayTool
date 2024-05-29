@@ -1,0 +1,237 @@
+2024-05-24 17:21:51,577 - __main__ - ERROR - Exception
+Traceback (most recent call last):
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 257, in disconnect
+    self.tloop.post(self.aio_obj.disconnect())
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 64, in post
+    raise ThreadLoopNotRunning(f"could not post {coro} since asyncio loop in thread has not been started or has been stopped")
+asyncua.sync.ThreadLoopNotRunning: could not post <coroutine object Client.disconnect at 0x000001DCEDE83780> since asyncio loop in thread has not been started or has been stopped
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\opcua_tool_shenhwei\gui\run_program.py", line 46, in <module>
+    RH.loop(looping_time=looping_time_str, snippet_start=snippet_start_, snippet_end=snippet_end_)
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 220, in loop
+    self.disconnect()
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 114, in disconnect
+    self.client_pc.disconnect()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 260, in disconnect
+    self.tloop.stop()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 58, in stop
+    self.loop.call_soon_threadsafe(self.loop.stop)
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 837, in call_soon_threadsafe
+    self._check_closed()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 539, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2024-05-27 11:35:27,500 - __main__ - ERROR - Exception
+Traceback (most recent call last):
+  File "C:\opcua_tool_shenhwei\gui\run_program.py", line 46, in <module>
+    RH.loop(looping_time=looping_time_str, snippet_start=snippet_start_, snippet_end=snippet_end_)
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 220, in loop
+    self.disconnect()
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 114, in disconnect
+    self.client_pc.disconnect()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 257, in disconnect
+    self.tloop.post(self.aio_obj.disconnect())
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 66, in post
+    return futur.result(self.timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+TimeoutError
+2024-05-27 13:06:43,444 - __main__ - ERROR - Exception
+Traceback (most recent call last):
+  File "C:\opcua_tool_shenhwei\gui\run_program.py", line 46, in <module>
+    RH.loop(looping_time=looping_time_str, snippet_start=snippet_start_, snippet_end=snippet_end_)
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 218, in loop
+    self.disconnect()
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 113, in disconnect
+    self.client_pc.disconnect()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 257, in disconnect
+    self.tloop.post(self.aio_obj.disconnect())
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 66, in post
+    return futur.result(self.timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+TimeoutError
+2024-05-27 13:41:39,563 - __main__ - ERROR - Exception
+Traceback (most recent call last):
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 268, in disconnect_sessionless
+    self.tloop.post(self.aio_obj.disconnect_sessionless())
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 64, in post
+    raise ThreadLoopNotRunning(f"could not post {coro} since asyncio loop in thread has not been started or has been stopped")
+asyncua.sync.ThreadLoopNotRunning: could not post <coroutine object Client.disconnect_sessionless at 0x0000027AE9B07440> since asyncio loop in thread has not been started or has been stopped
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\opcua_tool_shenhwei\gui\run_program.py", line 46, in <module>
+    RH.loop(looping_time=looping_time_str, snippet_start=snippet_start_, snippet_end=snippet_end_)
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 218, in loop
+    self.disconnect()
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 115, in disconnect
+    self.client_pc.disconnect_sessionless()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 271, in disconnect_sessionless
+    self.tloop.stop()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 58, in stop
+    self.loop.call_soon_threadsafe(self.loop.stop)
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 837, in call_soon_threadsafe
+    self._check_closed()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 539, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2024-05-27 14:12:50,191 - __main__ - DEBUG - Length of argv > 4
+2024-05-27 14:12:50,191 - __main__ - DEBUG - Looping time: 0W;0D;3H;0M;0S;
+2024-05-27 14:12:50,604 - __main__ - DEBUG - RH initialized
+2024-05-27 14:14:50,489 - __main__ - DEBUG - Length of argv > 4
+2024-05-27 14:14:50,489 - __main__ - DEBUG - Looping time: 0W;0D;2H;0M;0S;
+2024-05-27 14:14:50,825 - __main__ - DEBUG - RH initialized
+2024-05-27 14:16:01,273 - __main__ - DEBUG - Length of argv > 4
+2024-05-27 14:16:01,274 - __main__ - DEBUG - Looping time: 0W;0D;2H;0M;0S;
+2024-05-27 14:16:01,274 - __main__ - DEBUG - Looping enabled: 0W;0D;2H;0M;0S;, start: 31 , end: None
+2024-05-27 14:16:01,591 - __main__ - DEBUG - RH initialized
+2024-05-27 14:19:26,974 - __main__ - DEBUG - Length of argv > 4
+2024-05-27 14:19:26,974 - __main__ - DEBUG - Looping time: 0W;0D;2H;0M;0S;
+2024-05-27 14:19:26,974 - __main__ - DEBUG - Looping enabled: 0W;0D;2H;0M;0S;, start: 31 , end: None
+2024-05-27 14:19:27,357 - __main__ - DEBUG - RH initialized
+2024-05-27 14:19:27,435 - __main__ - DEBUG - Exception at main
+2024-05-27 14:19:27,436 - __main__ - ERROR - The server has reached its maximum number of sessions.(BadTooManySessions)
+Traceback (most recent call last):
+  File "C:\opcua_tool_shenhwei\gui\run_program.py", line 42, in <module>
+    RH.start()
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 138, in start
+    self.init_server_and_client()
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 78, in init_server_and_client
+    self.client_pc.connect()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 110, in wrapper
+    result = self.tloop.post(aio_func(*args, **kwargs))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 66, in post
+    return futur.result(self.timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\client\client.py", line 314, in connect
+    await self.create_session()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\client\client.py", line 493, in create_session
+    response = await self.uaclient.create_session(params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\client\ua_client.py", line 335, in create_session
+    data = await self.protocol.send_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\client\ua_client.py", line 172, in send_request
+    self.check_answer(data, f" in response to {request.__class__.__name__}")
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\client\ua_client.py", line 181, in check_answer
+    hdr.ServiceResult.check()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\ua\uatypes.py", line 375, in check
+    raise UaStatusCodeError(self.value)
+asyncua.ua.uaerrors._auto.BadTooManySessions: The server has reached its maximum number of sessions.(BadTooManySessions)
+2024-05-27 14:19:27,437 - __main__ - DEBUG - at finally clause
+2024-05-27 14:20:48,086 - __main__ - DEBUG - Length of argv > 4
+2024-05-27 14:20:48,086 - __main__ - DEBUG - Looping time: 0W;0D;2H;0M;0S;
+2024-05-27 14:20:48,086 - __main__ - DEBUG - Looping enabled: 0W;0D;2H;0M;0S;, start: 31 , end: None
+2024-05-27 14:20:48,585 - __main__ - DEBUG - RH initialized
+2024-05-27 14:21:44,477 - __main__ - ERROR - Exception
+Traceback (most recent call last):
+  File "C:\opcua_tool_shenhwei\gui\run_program.py", line 46, in <module>
+    RH.loop(looping_time=looping_time_str, snippet_start=snippet_start_, snippet_end=snippet_end_)
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 226, in loop
+    self.disconnect()
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 113, in disconnect
+    self.client_pc.disconnect()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 257, in disconnect
+    self.tloop.post(self.aio_obj.disconnect())
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 66, in post
+    return futur.result(self.timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\client\client.py", line 352, in disconnect
+    await self.close_session()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\client\client.py", line 707, in close_session
+    return await self.uaclient.close_session(True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\client\ua_client.py", line 366, in close_session
+    data = await self.protocol.send_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\client\ua_client.py", line 170, in send_request
+    raise ConnectionError("Connection is closed") from None
+ConnectionError: Connection is closed
+2024-05-27 14:21:44,485 - __main__ - DEBUG - at finally clause
+2024-05-27 14:25:17,729 - __main__ - DEBUG - Length of argv > 4
+2024-05-27 14:25:17,730 - __main__ - DEBUG - Looping time: 0W;0D;2H;0M;0S;
+2024-05-27 14:25:17,730 - __main__ - DEBUG - Looping enabled: 0W;0D;2H;0M;0S;, start: 31 , end: None
+2024-05-27 14:25:18,029 - __main__ - DEBUG - RH initialized
+2024-05-27 14:33:21,610 - __main__ - ERROR - Exception
+Traceback (most recent call last):
+  File "C:\opcua_tool_shenhwei\gui\run_program.py", line 46, in <module>
+    RH.loop(looping_time=looping_time_str, snippet_start=snippet_start_, snippet_end=snippet_end_)
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 226, in loop
+    self.disconnect()
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 113, in disconnect
+    self.client_pc.disconnect()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 257, in disconnect
+    self.tloop.post(self.aio_obj.disconnect())
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 66, in post
+    return futur.result(self.timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+TimeoutError
+2024-05-27 14:33:21,615 - __main__ - DEBUG - at finally clause
+2024-05-27 14:35:37,827 - __main__ - DEBUG - Length of argv > 4
+2024-05-27 14:35:37,827 - __main__ - DEBUG - Looping time: 0W;0D;2H;0M;0S;
+2024-05-27 14:35:37,827 - __main__ - DEBUG - Looping enabled: 0W;0D;2H;0M;0S;, start: 31 , end: None
+2024-05-27 14:35:38,169 - __main__ - DEBUG - RH initialized
+2024-05-27 15:14:23,580 - __main__ - ERROR - Exception
+Traceback (most recent call last):
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 268, in disconnect_sessionless
+    self.tloop.post(self.aio_obj.disconnect_sessionless())
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 64, in post
+    raise ThreadLoopNotRunning(f"could not post {coro} since asyncio loop in thread has not been started or has been stopped")
+asyncua.sync.ThreadLoopNotRunning: could not post <coroutine object Client.disconnect_sessionless at 0x0000020B08201F20> since asyncio loop in thread has not been started or has been stopped
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\opcua_tool_shenhwei\gui\run_program.py", line 46, in <module>
+    RH.loop(looping_time=looping_time_str, snippet_start=snippet_start_, snippet_end=snippet_end_)
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 226, in loop
+    self.disconnect()
+  File "C:\opcua_tool_shenhwei\gui\ReplayHandler.py", line 115, in disconnect
+    self.client_pc.disconnect_sessionless()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 271, in disconnect_sessionless
+    self.tloop.stop()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\site-packages\asyncua\sync.py", line 58, in stop
+    self.loop.call_soon_threadsafe(self.loop.stop)
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 837, in call_soon_threadsafe
+    self._check_closed()
+  File "C:\Users\SESA741618\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 539, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2024-05-27 15:14:23,602 - __main__ - DEBUG - at finally clause
+2024-05-27 15:30:46,454 - __main__ - DEBUG - Length of argv > 4
+2024-05-27 15:30:46,454 - __main__ - DEBUG - Looping time: 0W;0D;0H;30M;0S;
+2024-05-27 15:30:46,454 - __main__ - DEBUG - Looping enabled: 0W;0D;0H;30M;0S;, start: 31 , end: None
+2024-05-27 15:30:46,892 - __main__ - DEBUG - RH initialized
+2024-05-27 16:21:30,127 - __main__ - DEBUG - Length of argv > 4
+2024-05-27 16:21:30,128 - __main__ - DEBUG - Looping time: 0W;0D;0H;20M;0S;
+2024-05-27 16:21:30,128 - __main__ - DEBUG - Looping enabled: 0W;0D;0H;20M;0S;, start: 8 , end: None
+2024-05-27 16:21:30,591 - __main__ - DEBUG - RH initialized
